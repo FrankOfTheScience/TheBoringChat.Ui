@@ -1,0 +1,58 @@
+.chat-room {
+    margin-top: 2rem;
+}
+
+.chatroom-header {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.chatroom-subtitle {
+    color: #666;
+}
+
+body.dark-mode .chat-room {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .chatroom-header {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .chatroom-subtitle {
+    color: #bbbbbb;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card-header {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .card-body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .form-control-custom {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+body.dark-mode .input-group-text-custom {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+body.dark-mode .btn-submit {
+    background-color: #444444;
+    border: 1px solid #444444;
+}

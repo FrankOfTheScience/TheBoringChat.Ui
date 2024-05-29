@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Form, Col, Row, Button } from 'react-bootstrap';
-import './styles/waitingRoom.css'; // Importa il file CSS per il componente
+import './styles/waitingRoom.css'; 
 
 const WaitingRoom = ({ joinChatRoom, darkMode }) => {
     const [username, setUsername] = useState('');
@@ -14,17 +14,17 @@ const WaitingRoom = ({ joinChatRoom, darkMode }) => {
     
     return (
         <Form onSubmit={handleSubmit}>
-            <Row className={`px-5 py-5 ${darkMode ? 'dark-mode' : ''}`}>
+            <Row className={`waiting-room ${darkMode ? 'dark-mode' : ''}`}>
                 <Col sm={12}>
                     <Form.Group>
-                        <Form.Control placeholder='Nickname' value={username} onChange={e => setUsername(e.target.value)} />
+                        <Form.Control className="input-field" placeholder='Nickname - Pls try not to be trivial...' value={username} onChange={e => setUsername(e.target.value)} />
                         <br/>
-                        <Form.Control placeholder='Chat name - If blank, really boring stuff will come!' value={chatroom} onChange={e => setChatroom(e.target.value)} />
+                        <Form.Control className="input-field" placeholder='Chat name - If blank, really boring stuff will come!' value={chatroom} onChange={e => setChatroom(e.target.value)} />
                     </Form.Group>
                 </Col>
                 <Col sm={12}>
-                    <hr/>
-                    <Button variant='success' type='submit'>I warned you!</Button>
+                    <br/>
+                    <Button variant='primary' type='submit' disabled={!username} className="btn-submit">I warned you!</Button>
                 </Col>
             </Row>
         </Form>

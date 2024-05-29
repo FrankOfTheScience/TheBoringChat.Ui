@@ -1,0 +1,79 @@
+.dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  .dark-mode-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .dark-mode-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sun-icon, .moon-icon {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .sun-icon {
+    margin-left: 5px;
+  }
+  
+  .moon-icon {
+    margin-right: 5px;
+  }
+  
+  .toggle-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .dark-mode-checkbox:checked + .dark-mode-label .toggle-ball {
+    transform: translateX(30px);
+  }
+  
+  .dark-mode-checkbox:checked + .dark-mode-label {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-mode-checkbox:checked + .dark-mode-label .sun-icon {
+    color: #f39c12;
+  }
+  
+  .dark-mode-checkbox:checked + .dark-mode-label .moon-icon {
+    color: #f1c40f;
+  }
+  
+  .dark-mode-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212; 
+    z-index: -1; 
+  }

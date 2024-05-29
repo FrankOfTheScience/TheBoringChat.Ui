@@ -1,0 +1,14 @@
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode input::placeholder {
+    color: #aaaaaa;
+  }
+  
+  .btn-submit {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-left: 0;
+}

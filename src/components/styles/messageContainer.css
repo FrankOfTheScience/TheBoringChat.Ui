@@ -1,0 +1,32 @@
+.username {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.message {
+    font-style: italic;
+    color: #34495e;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.dark-mode .username {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.dark-mode .message {
+    font-style: italic;
+    color: #34495e;
+}

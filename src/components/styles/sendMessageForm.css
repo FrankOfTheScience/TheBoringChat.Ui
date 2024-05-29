@@ -1,0 +1,43 @@
+.send-message-form {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.input-group-text-custom {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+.form-control-custom {
+    border: 1px solid #ced4da;
+    border-left: 0;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-left: 0;
+}
+
+body.dark-mode .send-message-form {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .input-group-text-custom {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+body.dark-mode .form-control-custom {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+body.dark-mode .btn-submit {
+    background-color: #444444;
+    border: 1px solid #444444;
+}
