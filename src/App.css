@@ -1,0 +1,140 @@
+/* Reset dei margini e dei padding per tutti gli elementi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Regole per il body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Regole per il body in modalità scura */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Regole per la navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 1000;
+  }
+  
+  /* Regole per la navbar in modalità scura */
+  body.dark-mode .navbar {
+    background-color: #1e1e1e;
+  }
+  
+  /* Regole per il toggle della modalità scura */
+  .dark-mode-toggle .sun-icon {
+    color: #f39c12;
+  }
+  
+  .dark-mode-toggle .moon-icon {
+    color: #f1c40f;
+  }
+  
+  /* Regole per i card */
+  .card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Regole per i card in modalità scura */
+  .dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  /* Regole per il chat-room */
+  .chat-room {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Regole per il chat-room in modalità scura */
+  .dark-mode .chat-room {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  /* Regole per l'header della chatroom */
+  .chatroom-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Regole per l'header della chatroom in modalità scura */
+  .dark-mode .chatroom-header {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Regole per il sottotitolo della chatroom */
+  .chatroom-subtitle {
+    color: #6c757d;
+  }
+  
+  /* Regole per il sottotitolo della chatroom in modalità scura */
+  .dark-mode .chatroom-subtitle {
+    color: #bbbbbb;
+  }
+  
+  /* Regole per le tabelle */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Regole per le righe delle tabelle al passaggio del mouse */
+  .table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Regole per le tabelle in modalità scura */
+  .dark-mode .table {
+    background-color: #1e1e1e;
+  }
+  
+  /* Regole per i bordi delle tabelle in modalità scura */
+  .dark-mode .table-bordered {
+    border-color: #444444;
+  }
+  
+  /* Regole per le righe delle tabelle al passaggio del mouse in modalità scura */
+  .dark-mode .table-hover tbody tr:hover {
+    background-color: #333333;
+  }
+  
+  /* Regole per gli username */
+  .username {
+    color: #007bff;
+  }
+  
+  /* Regole per gli username in modalità scura */
+  .dark-mode .username {
+    color: #bb86fc;
+  }
+  
+  /* Regole per i messaggi */
+  .message {
+    color: #000000;
+  }
+  
+  /* Regole per i messaggi in modalità scura */
+  .dark-mode .message {
+    color: #ffffff;
+  }
+  
