@@ -77,7 +77,7 @@ You can find the Backend repo [HERE](https://github.com/FrankOfTheScience/TheBor
      If (-not (Test-Path -Path ".env")) {
          New-Item -ItemType File -Path ".env"
      }
-     Set-Content -Path ".env" -Value "REACT_APP_BACKEND_BASE_URL=$backendUrl"```
+     Set-Content -Path ".env" -Value "REACT_APP_BACKEND_BASE_URL=$backendUrl"
 
 6. **Install npm dependencies:**
    - Run:
