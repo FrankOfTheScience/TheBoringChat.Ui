@@ -4,7 +4,7 @@ import './styles/messageContainer.css';
 const MessageContainer = ({messages}) =>{
 
     const getUsernameColor = (username) => {
-        const colors = ['#FFB6B9', '#FFEEAD', '#FFEDD2', '#D0ECE7', '#A0CED9', '#B4F8C8', '#E2F0CB', '#E2F0CB', '#B5EAD7', '#C7CEEA'];
+        const colors = ['#BF616A', '#D08770', '#EBCB8B', '#A3BE8C', '#B48EAD'];
         const index = username.charCodeAt(0) % colors.length;
         return colors[index];
     };
