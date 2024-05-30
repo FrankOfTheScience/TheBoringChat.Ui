@@ -12,7 +12,11 @@ Btw you can find the backend repo here, it is a ASP.NET Core 8.0 WebApi project 
 
 #### State of the project:
 
-This frontend Project is done, maybe I am going to change some color here and there but major improvements won't be released on this repo until I find new ways to experiment with backend, which is my main focus.
+This Frontend Project is done, maybe I am going to change some color here and there but major improvements won't be released on this repo until I find new ways to experiment with backend, which is my main focus.
+
+#### Backend
+
+You can find the Backend repo [HERE](https://github.com/FrankOfTheScience/TheBoringChat)
 
 ## Project Screen Shot(s)
 
@@ -89,12 +93,21 @@ This frontend Project is done, maybe I am going to change some color here and th
      npm start
      ```
 
-8. **Visit the frontend on localhost:**
-   - Open your preferred web browser and go to the address `http://localhost:3000`. Here you will be able to see the frontend app in action.
+## Functional Instructions
 
-9. **Optional step: Test the chat with multiple clients:**
+0. **Follow the previous installation and setup instructions**
+   
+1. **Visit the frontend on localhost:**
+   - Open your preferred web browser and go to the address `http://localhost:3000`. Here you will be able to see the frontend app in action.
+  
+2. **Fill the form:**
+   - Nickname is mandatory, Chatroom is optional
+   - If Chatroom isn't provided you will be joint to the general chat
+   - Provide the same Chatroom name to join a private chat with clients who provided the same Chatroom name
+
+3. **Optional step: Test the chat with multiple clients:**
    - Open another browser or an incognito browsing window.
-   - Visit `http://localhost:3000` to create another instance of the frontend and try chatting between the two clients.
+   - Visit `http://localhost:3000` to create another instance of the frontend and try chatting between the two clients
 
 ### Enjoy Boredom!!!
 
