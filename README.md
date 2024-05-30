@@ -20,21 +20,22 @@ You can find the Backend repo [HERE](https://github.com/FrankOfTheScience/TheBor
 
 #### Waiting Room:   
 **Light Theme:**
-[TBD]
+![waiting-room-light](https://github.com/FrankOfTheScience/theboringchat.ui/assets/119010269/cd308c13-47a2-46da-86dd-d32c1bf03976)
+
 **Dark Theme:**
-[TBD]
+![waiting-room-dark](https://github.com/FrankOfTheScience/theboringchat.ui/assets/119010269/72abc670-295b-4d89-a02c-42a9d45ca6fc)
 
 #### Chat Room:   
 **Light Theme:**
-[TBD]
+![chat-room-light](https://github.com/FrankOfTheScience/theboringchat.ui/assets/119010269/50ebf363-3c67-4c39-8be1-323d987056dd)
+
 **Dark Theme:**
-[TBD]
+![chat-room-dark](https://github.com/FrankOfTheScience/theboringchat.ui/assets/119010269/bb5e822a-a093-4326-9f3a-1c2e78e0bd51)
 
 #### Three Clients Chat Room:   
-**Light Theme:**
-[TBD]
-**Dark Theme:**
-[TBD]
+**Mixed Themes:**
+![commo-chat-mixed-themes](https://github.com/FrankOfTheScience/theboringchat.ui/assets/119010269/9b401c7c-26fc-42de-8716-9385ba3a0595)
+
 
 ## Installation and Setup Instructions
 
