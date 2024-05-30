@@ -12,6 +12,8 @@ This project was made as a demo, to experiment with `.NET SignalR` library, sinc
 
 This Frontend Project is done, maybe I am going to change some color here and there but major improvements won't be released on this repo until I find new ways to experiment with backend, which is my main focus.
 
+_I would like to publish this project, but for free. Since frontend is a static page I might use GitPages, but for backend I was trying to find free host providers straight forward to use, I don't want to invest too much time on just publish this app, since it is a simple personal project sincerely. Open to suggestion for this!_
+
 #### Backend
 
 You can find the Backend repo [HERE](https://github.com/FrankOfTheScience/TheBoringChat)
