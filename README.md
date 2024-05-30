@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+## TheBoringChat - UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Description:
 
-## Available Scripts
+This is the Frontend for TheBoringChat, a really boring group (or 1:1) chat.
 
-In the project directory, you can run:
+#### Context:
 
-### `npm start`
+This project was made as a demo, to experiment with `.NET SignalR` library, since I am a Backend Dev the UI has been totally improvised using `React`, so I messed up here and forth specially with `CSS` trying to find workarounds for darkMode for example 😅.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Btw you can find the backend repo here, it is a ASP.NET Core 8.0 WebApi project using SignalR.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### State of the project:
 
-### `npm test`
+This frontend Project is done, maybe I am going to change some color here and there but major improvements won't be released on this repo until I find new ways to experiment with backend, which is my main focus.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Screen Shot(s)
 
-### `npm run build`
+#### Waiting Room:   
+**Light Theme:**
+[TBD]
+**Dark Theme:**
+[TBD]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Chat Room:   
+**Light Theme:**
+[TBD]
+**Dark Theme:**
+[TBD]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Three Clients Chat Room:   
+**Light Theme:**
+[TBD]
+**Dark Theme:**
+[TBD]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup Instructions
 
-### `npm run eject`
+### Prerequisites
+- [Node.js](https://nodejs.org/) installed on your machine.
+- [Git](https://git-scm.com/) installed on your machine.
+- [ASP.NET Core SDK](https://dotnet.microsoft.com/download) installed on your machine.
+- Powershell or a terminal compatible with bash commands.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Download the frontend repository:**
+   - Navigate through Powershell to your destination directory.
+   - Run:
+   ```powershell
+   git clone https://github.com/FrankOfTheScience/theboringchat.ui.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Download the backend repository:**
+   - Run:
+   ```powershell
+   git clone https://github.com/FrankOfTheScience/TheBoringChat.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Launch the backend project (ASP.NET Core WebApi) locally via Powershell:**
+   - Navigate to the backend repository just extracted.
+   - Run:
+   ```powershell
+   dotnet run
+   ```
 
-## Learn More
+4. **Take note of the localhost:**
+   - While running the backend server, take note of the localhost address on which the server is listening. It is usually `http://localhost:5000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Configure the frontend to connect to the local backend:**
+   - Through Powershell navigate into the directory of the extracted frontend repository.
+   - Run:
+     ```powershell
+     $backendUrl = "<your_backend_localhost>"
+     If (-not (Test-Path -Path ".env")) {
+         New-Item -ItemType File -Path ".env"
+     }
+     Set-Content -Path ".env" -Value "REACT_APP_BACKEND_BASE_URL=$backendUrl"```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. **Install npm dependencies:**
+   - Run:
+     ```powershell
+     npm install
+     ```
 
-### Code Splitting
+7. **Start the frontend development server:**
+   - Run:
+     ```powershell
+     npm start
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+8. **Visit the frontend on localhost:**
+   - Open your preferred web browser and go to the address `http://localhost:3000`. Here you will be able to see the frontend app in action.
 
-### Analyzing the Bundle Size
+9. **Optional step: Test the chat with multiple clients:**
+   - Open another browser or an incognito browsing window.
+   - Visit `http://localhost:3000` to create another instance of the frontend and try chatting between the two clients.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Enjoy Boredom!!!
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
