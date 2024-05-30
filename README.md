@@ -8,8 +8,6 @@ This is the Frontend for TheBoringChat, a really boring group (or 1:1) chat.
 
 This project was made as a demo, to experiment with `.NET SignalR` library, since I am a Backend Dev the UI has been totally improvised using `React`, so I messed up here and forth specially with `CSS` trying to find workarounds for darkMode for example 😅.
 
-Btw you can find the backend repo here, it is a ASP.NET Core 8.0 WebApi project using SignalR.
-
 #### State of the project:
 
 This Frontend Project is done, maybe I am going to change some color here and there but major improvements won't be released on this repo until I find new ways to experiment with backend, which is my main focus.
